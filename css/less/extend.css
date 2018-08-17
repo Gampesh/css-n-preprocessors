@@ -1,0 +1,13 @@
+nav ul {
+  background: blue;
+}
+.inline,
+nav ul {
+  color: red;
+}
+nav ul {
+  background: blue;
+}
+nav ul.inline {
+  color: red;
+}

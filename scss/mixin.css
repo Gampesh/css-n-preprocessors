@@ -1,0 +1,67 @@
+/* ================= mixin without parameter ======================= */
+.page-title {
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff0000;
+  padding: 4px;
+  margin-top: 10px; }
+
+/* ================= mixin with parameter ======================= */
+.box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+.box {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px; }
+
+/* ================= mixin with default parameter ======================= */
+p {
+  border-color: blue;
+  border-width: 1px;
+  border-style: dashed; }
+
+h1 {
+  border-color: blue;
+  border-width: 2px;
+  border-style: dashed; }
+
+/* ================= mixin with variable parameter ======================= */
+.shadows {
+  -moz-box-shadow: 0px 4px 5px #666, 2px 6px 10px #999;
+  -webkit-box-shadow: 0px 4px 5px #666, 2px 6px 10px #999;
+  box-shadow: 0px 4px 5px #666, 2px 6px 10px #999; }
+
+/* ================= mixin with variable parameter (using map) ======================= */
+.primary {
+  color: #ff0000;
+  background-color: #00ff00;
+  border-color: #0000ff; }
+
+.secondary {
+  color: red;
+  background-color: green;
+  border-color: blue; }
+
+/* ================= mixin call outside class/id ======================= */
+a {
+  color: blue;
+  background-color: red; }
+
+/* ================= multiple mixin ======================= */
+p {
+  background-color: #fc0;
+  font-size: 20px; }
+
+/* ========== variable scope in mixin ============= */
+.colors {
+  background-color: blue;
+  color: white;
+  border-color: blue; }
+
+/*# sourceMappingURL=mixin.css.map */

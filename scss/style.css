@@ -1,0 +1,44 @@
+/*  variable */
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333; }
+
+/*  ====== Selector as Variable =========== */
+.someClass {
+  font-weight: bold;
+  line-height: 40px;
+  margin: 0 auto; }
+
+p.foo {
+  border-color: blue; }
+
+#bar {
+  margin: 0 auto; }
+
+/*
+However, there are three situations where the / will be interpreted as division. These cover the vast majority of cases where division is actually used. They are:
+
+If the value, or any part of it, is stored in a variable or returned by a function.
+If the value is surrounded by parentheses, unless those parentheses are outside a list and the value is inside.
+If the value is used as part of another arithmetic expression.
+*/
+p {
+  font: 10px/8px;
+  width: 500px;
+  width: 1;
+  height: 250px;
+  margin-left: 9px;
+  font: italic bold 10px/8px;
+  font: 12px/30px; }
+
+/*  ====== Color operations =========== */
+p {
+  color: #050709;
+  /* computes 01 + 04 = 05, 02 + 05 = 07, and 03 + 06 = 09 */
+  color: #020406;
+  /* computes 01 * 2 = 02, 02 * 2 = 04, and 03 * 2 = 06 */
+  color: rgba(255, 255, 0, 0.75); }
+
+/*  variable */
+
+/*# sourceMappingURL=style.css.map */

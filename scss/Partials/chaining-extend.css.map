@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,qCAAO;EACL,MAAM,EAAE,QAAQ;EAChB,gBAAgB,EAAE,IAAI;;AAExB,6BAAc;EAEZ,YAAY,EAAE,GAAG;;AAEnB,cAAe;EAEb,QAAQ,EAAE,KAAK;EACf,GAAG,EAAE,GAAG;EACR,MAAM,EAAE,GAAG;EACX,IAAI,EAAE,GAAG;EACT,KAAK,EAAE,GAAG",
+"sources": ["chaining-extend.scss"],
+"names": [],
+"file": "chaining-extend.css"
+}

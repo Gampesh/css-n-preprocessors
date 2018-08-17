@@ -1,0 +1,23 @@
+// Variables
+
+/*  ====== Selector as Variable =========== */
+
+$selectors: "someClass" ;
+.#{ $selectors} {
+  font-weight: bold;
+  line-height: 40px;
+  margin: 0 auto;
+}
+
+
+$nameClassSelector: foo;
+$nameIdSelector: bar;
+
+$attr: border;
+p.#{$nameClassSelector} {
+  #{$attr}-color: blue;
+}
+
+##{$nameIdSelector} {
+  margin: 0 auto;
+}

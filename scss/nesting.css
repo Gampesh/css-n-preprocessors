@@ -1,0 +1,55 @@
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+nav li {
+  display: inline-block; }
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none; }
+
+.container {
+  width: 200px;
+  padding: 20px;
+  background: #eee;
+  border: 1px solid black; }
+  .container > .content {
+    background: #ddd; }
+
+#main {
+  width: 97%; }
+  #main p, #main div {
+    font-size: 2em; }
+    #main p a, #main div a {
+      font-weight: bold; }
+  #main pre {
+    font-size: 3em; }
+
+/* =================== Referencing Parent Selectors ======================== */
+nav a {
+  font-weight: bold;
+  text-decoration: none; }
+  nav a:hover {
+    text-decoration: underline; }
+  body.firefox nav a {
+    font-weight: normal; }
+
+/* =================== Nested Properties ======================== */
+.funky {
+  font-family: Verdana;
+  font-size: 30em;
+  font-weight: bold; }
+
+.non-dealer-border {
+  opacity: 0.3;
+  border-top: 1px lightgray solid;
+  padding: 5px 0px; }
+
+  .non-dealer-border:hover .text-red {
+    opacity: 1;
+    color: red;
+    cursor: not-allowed;
+  }
+
+/*# sourceMappingURL=nesting.css.map */

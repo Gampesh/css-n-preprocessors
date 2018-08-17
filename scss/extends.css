@@ -1,0 +1,36 @@
+/*  =====  properties extend ========*/
+.message, .success, .error, .warning {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333; }
+
+.success {
+  border-color: green; }
+
+.error {
+  border-color: red; }
+
+.warning {
+  border-color: yellow; }
+
+/* */
+@media print {
+  .printError, .seriousError {
+    border: 1px #f00;
+    background-color: #fdd; }
+
+  .seriousError {
+    border-width: 3px; } }
+.err, .seriousErr {
+  border: 1px #f00;
+  background-color: #fdd; }
+
+/*
+.err.bgImage {
+  background-image: url("/image/background.png");
+}
+*/
+.seriousErr {
+  border-width: 3px; }
+
+/*# sourceMappingURL=extends.css.map */

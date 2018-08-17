@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+
+        .caret {
+            border-left: solid 70px transparent;
+            border-right: solid 70px transparent;
+            border-bottom: solid 70px #fff;
+            height: 0;
+            width: 0;
+        }
+
+        /* PRESENTATIONAL STYLES */
+        body {
+            background: #ddd;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        p {
+            font-weight: 400;
+            font-size: inherit;
+            line-height: 1.125;
+            font-family: serif;
+        }
+        .border-bottom {
+            border-bottom: 1px solid #000;
+        }
+
+        /*ul li {*/
+            /*list-style-type: none;*/
+        /*}*/
+        /*li ul li {*/
+            /*!* redefine to default value *!*/
+            /*list-style-type: disc;*/
+        /*}*/
+
+        ul > li {
+            list-style-type: none;
+        }
+
+        p {
+            font-size: 22px;
+            padding: 10px;
+            line-height: 24px;
+        }
+
+        @media (max-width: 767px) {
+            P {
+                font-size: 16px;
+                padding: 5px;
+            }
+        }
+        #footer {
+            padding-top: 23px;
+            padding-bottom: 47px;
+        }
+    </style>
+</head>
+<body>
+<!--<div class="caret"></div>-->
+
+<figure>
+    <img src="demo.jpg" alt="">
+    <!-- figcaption should be child of element figure element, not div -->
+    <figcaption>
+        <h2>Hello world</h2>
+    </figcaption>
+</figure>
+
+<picture>
+    <!-- source should have srcset attribute -->
+    <source src="demo.webp" type="image/webp">
+    <img src="demo.jpg" alt="">
+</picture>
+
+<details>
+    <!-- summary is not allowed as child of header -->
+    <summary>Expand details</summary>
+    <p>All content goes here [P Tag]</p>
+</details>
+
+<div>
+    <ul>
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3
+            <ul>
+                <li>Submenu 1</li>
+                <li>Submenu 2</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+<div class="main-content">
+    <p class="content-title">Main text title  [P Tag] </p>
+    <img src="http://via.placeholder.com/150x150" alt="example">
+    <p class="image-description">Here is image description  [P Tag]</p>
+</div>
+
+<main>
+    <h1>Main text title</h1>
+    <figure>
+        <img src="http://via.placeholder.com/150x150" alt="example">
+        <figcaption>
+            Here is image description
+        </figcaption>
+    </figure>
+</main>
+<section class=”container”>
+    <div class=”row”>
+        <div class=”col-xs-12”>
+            <div class=”inner-wrapper”>
+                <span>Unnecessary br tags</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class=”container”>
+    <p>Unnecessary br tags</p>
+</section>
+
+<h1>Welcome</h1>
+<p>This is unnecessary br tag.  [P Tag]</p>
+</body>
+<footer id="footer" class="text-center">
+    <h2>Let's Get In Touch!</h2>
+    <hr>
+    <p>Ready to start your next project with us? [P Tag]</p>
+</footer>
+</html>
